@@ -61,7 +61,23 @@ namespace JobBars.Jobs {
             })
         ];
 
-        public static IconReplacer[] Icons => [];
+        public static IconReplacer[] Icons => new[] {
+            new IconBuffReplacer( UiHelper.Localize(BuffIds.VerfireReady), new IconBuffProps {
+                Icons = [
+                    ActionIds.Verfire,
+                ],
+                Triggers = [
+                    new IconBuffTriggerStruct { Trigger = new Item( BuffIds.VerfireReady), Duration = 30 },
+                ]
+            }),
+            new IconBuffReplacer( UiHelper.Localize(BuffIds.VerstoneReady), new IconBuffProps {
+                Icons = [
+                    ActionIds.Verstone,
+                ],
+                Triggers = [
+                    new IconBuffTriggerStruct { Trigger = new Item( BuffIds.VerstoneReady), Duration = 30 },
+                ]
+            })};
 
         public static bool MP => true;
 

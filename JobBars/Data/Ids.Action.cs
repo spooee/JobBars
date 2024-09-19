@@ -212,6 +212,8 @@ namespace JobBars.Data {
         Embolden = 7520,
         Manafication = 7521,
         MagickBarrier = 25857,
+        Verfire = 7510,
+        Verstone = 7511,
 
         // PCT ===========
         StarryMuse = 34675,
